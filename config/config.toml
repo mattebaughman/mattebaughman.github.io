@@ -5,7 +5,7 @@ static_dir = "./static"
 
 [overview]
 name = "Matt Baughman"
-titles = ["PhD Candidate", "Computer Scientist"]
+titles = ["PhD", "Computer Scientist"]
 headshot = "images/headshot.jpg"
 contacts = [
     { name = "email", link = "mailto:mbaughman123@gmail.com" },
