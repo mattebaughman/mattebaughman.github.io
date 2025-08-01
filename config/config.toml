@@ -19,15 +19,15 @@ text = """
 Hi there!
 I recently completed my Ph.D. in Computer Science with <a href="https://labs.globus.org" target="_blank">Globus Labs</a> at the <a href="https://cs.uchicago.edu/" target="_blank">University of Chicago</a>,
 where I was co-advised by <a href="https://cs.uchicago.edu/people/ian-foster/" target="_blank">Ian Foster</a> and <a href="https://kylechard.com/" target="_blank">Kyle Chard</a>.
-My research spans high-performance computing, distributed systems, and deep learning frameworks.
-I completed my Bachelors in Computer Science at the <a href="https://cs.utexas.edu/" target="_blank">University of Texas at Austin</a> and previously worked at Apple, Google, and the Texas Advanced Computing Center.
+My research spans high-performance computing, distributed systems, and cost-aware computing.
+I completed my Bachelors in Computer Science and Philosphy at <a href="https://minerva.edu/" target="_blank">Minerva University</a> and have experience at Argonne National Lab, Opinary, and Google.
 """
 
 [research]
 sections = [
-    { name = "Distributed Systems", text = "We are designing new programming paradigms which decouple communication from application design to enable multiple data movement methods depending on <i>where</i> data are moved, <i>what</i> are moved, or <i>when</i> they are moved. We are using these paradigms to build scalable scientific workflows, federated function-as-a-service platforms, and multi-agent systems." },
-    { name = "Scalable Deep Learning", text = "We are exploring new techniques for improving deep learning training time and scalability by (1) exploiting scalable algorithms for second-order information approximation; (2) developing methods for adapting to different computer hardware by tuning computation and communication to maximize training speed; (3) exploring compression techniques to reduce communication overheads; and (4) enabling complex, hierarchical federated learning across diverse ecosystems of hardware." },
-    { name = "AI for Science", text = "We are (1) training large (billion+ parameter) transformer-based language models on broad scientific literature to automate knowledge extraction; (2) developing frameworks for coupling AI and simulations on exascale supercomputers; and (3) building innovative and large-scale solutions to scientific challenges in genome evolution, next-generation battery design, and carbon capture."},
+    { name = "Distributed Systems", text = "We are designing new programming paradigms which decouple system configuration and control from application design to enable multi-system workflows spanning HPC, the cloud, and the edge." },
+    { name = "Federated Learning", text = "We are exploring new techniques for improving distributed deep learning using self-adaptive system design and online feedback to enable complex, hierarchical federated learning across diverse ecosystems of hardware." },
+    { name = "Cost-aware Computing", text = "We are building scalable frameworks for highly distributed science workflows spanning dozens of computing sites and scaling to tens of thousands of compute nodes using novel cost-aware task placement algorithms and federated function-as-a-service infrastructure."}
 ]
 
 [projects]
