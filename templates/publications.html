@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+{% for key, category in pub_categories.items() %}
+<div style="margin-bottom: 10px">
+<div class="bullet">
+<div><i class="material-icons">chevron_right</i></div>
+<div id="bullet-entry"><b>{{ category | upper }}</b></div>
+</div>
+<div style="padding-left: 24px">
+<table cellspacing="0" cellpadding="0" style="table-layout: auto; width: 100%">
+    <tbody>
+    {% for pub in publications %}
+    {% if pub.category == key %}
+    <tr>
+        <td style="white-space: nowrap">
+            <span class="grey-text text-darken-1">{{ pub.date_str }}</span>
+        </td>
+        <td id={{ pub.bibtex_id }} style="width: 100%">
+            <b>{{ pub.title }}</b>
+            <a href="#{{ pub.bibtex_id }}" target="_self">
+                <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+        <a href="javascript:unhide('{{ pub.bibtex_id }}_tldr')" target="_self">TLDR</a> |
+        {% if pub.paper %}
+        <a href="{{ pub.paper }}">PDF</a> |
+        {% endif %}
+        <a href="javascript:unhide('{{ pub.bibtex_id }}_authors')" target="_self">Authors</a> |
+        {% if pub.website %}
+        <a href="{{ pub.website }}">Website</a> |
+        {% endif %}
+        {% if pub.code %}
+        <a href="{{ pub.code }}">Code</a> |
+        {% endif %}
+        {% if pub.poster %}
+        <a href="{{ pub.poster }}">Poster</a> |
+        {% endif %}
+        {% if pub.slides %}
+        <a href="{{ pub.slides }}">Slides</a> |
+        {% endif %}
+        {% if pub.publisher %}
+        <a href="{{ pub.publisher }}">Publication</a> |
+        {% elif pub.preprint %}
+        <a href="{{ pub.preprint }}">Preprint</a> |
+        {% endif %}
+        <a href="javascript:unhide('{{ pub.bibtex_id }}_bibtex')" target="_self">BibTex</a> |
+        <em>
+            {{ pub.venue }}
+             {% if pub.awards %}
+            — {{ pub.awards }}
+            {% endif %}
+        </em>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <div id="{{ pub.bibtex_id }}_tldr" class="hidden">
+                <div class="grey lighten-3" id="dropdown-box">
+                    <div id="dropdown-box-inner">
+                    <b>TLDR:</b> {{ pub.tldr }}
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <div id="{{ pub.bibtex_id }}_authors" class="hidden">
+                <div class="grey lighten-3" id="dropdown-box">
+                    <div id="dropdown-box-inner">
+                    <b>Authors:</b> {{ pub.authors }}
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <div id="{{ pub.bibtex_id }}_bibtex" class="hidden">
+                <div class="grey lighten-3" id="dropdown-box">
+                <pre id="dropdown-box-inner" style="white-space: pre-wrap; font-family: 'Roboto Mono'; font-size: 10pt;">{{ pub.bibtex }}</pre>
+                </div>
+            </div>
+        </td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+{% endfor %}

@@ -1,0 +1,11 @@
+{
+    "title": "PROFILING, PREDICTING, AND PROVISIONING: ENABLING COST-AWARE COMPUTATION FOR THE CLOUD AND MODERN HETEROGENEOUS ENVIRONMENTS",
+    "abstract": "The growing prevalence of cloud resources and specialized hardware in the form of GPUs, ASICs, and IoT devices requires increasingly efficient and intentional use of these resources. Moreover, the complexity of choice presented by these diverse resources creates an optimization problem largely intractable to manual control. Therefore, modern computation in heterogeneous environments must be executed in a cost-aware, automated fashion. This control system can be decomposed into three discrete tasks: profiling, prediction, and provisioning. We profile the execution characteristics of a range of workloads on a range of hardware. Given those characteristics, we optimize our choice of resources for workload deployment based on predicted cost. Finally, we seamlessly provision any necessary resources and deploy the workload given the optimized choice of resource. In this thesis, we integrate several projects spanning the profiling, predicting, and provisioning cycle towards a unified system for the cost-aware distribution of workloads in dynamic, heterogeneous computing environments. Specifically, we develop a modular profiling system that characterizes the execution performance of scientific workflows deployed on cloud resources, employ statistical analyses and machine learning to predict the cost of using preemptible cloud resources, examine the role of computational tradeoffs in various workloads, and build on existing Function-as-a-Service (FaaS) frameworks to demonstrate a novel, cost-aware function distribution system. Through this work, we show the significant cost and time reductions for scientific workload execution, while enabling function-based distributed computing in a cost-aware heterogeneous environment.",
+    "location": "Masters Thesis",
+    "committee": "Kyle Chard, Ian Foster, and Hank Hoffman",
+    "pdf": "publications/baughman2021masters.pdf",
+    "poster": null,
+    "slides": "slides/masters-presentation.pdf",
+    "year": 2021,
+    "month": 8
+}
