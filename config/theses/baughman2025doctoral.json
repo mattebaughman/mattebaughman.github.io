@@ -1,11 +1,11 @@
 {
-    "title": "Coralling the Computing Continuum",
-    "abstract": "",
+    "title": "Coralling the Computing Continuum: Enabling Multi-System Workflows with Serverless Computing",
+    "abstract": "The computing continuum describes the convergence of global compute infrastructure as network bandwidths increase. To mobilize that infrastructure, we need to create a system that ties these diverse resources together—--we need to corral the computing continuum. This effort began with task-wise solutions, addressing different components of task placement—profiling, predicting, and provisioning. These individual solutions enabled an early system that took into account compute costs, workload execution profiles, and the ability to move compute between systems. We combined and extended these works into a more robust task scheduling system called DELTA and its successor DELTA+. These systems incorporated notions of task execution time, data transfer costs, and machine performance but could not be used on batch scheduled systems or in multi-node environments. While compute is the currency of the future, there is no unified way to access that currency. To fill this gap, we introduce Adaptive Task Management (ATM)—--a framework that acts as a multi-system task manager, mapping tasks to the many resources that comprise the continuum. ATM is designed on top of the Globus Compute framework, using existing infrastructure from edge devices to batch-scheduled HPC systems. ATM includes a novel placement algorithm and novel monitoring and task management systems designed to accommodate both large batches of tasks as well as more complex DAG-based workflows. To ground and evaluate the development of these frameworks, we explore the application of cost-aware principles in federated learning, material design and protein docking science applications, and in the performance optimization of serverless computing benchmarks.",
     "location": "Doctoral Dissertation",
-    "committee": "",
+    "committee": "Kyle Chard, Ian Foster, and Omer Rana (Cardiff University)",
     "pdf": "publications/baughman2025dissertation.pdf",
-    "poster": "posters/baughman2025poster.pdf",
+    "poster": null,
     "slides": "slides/doctoral-presentation.pdf",
     "year": 2025,
-    "month": 7
+    "month": 8
 }
