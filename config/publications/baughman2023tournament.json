@@ -11,7 +11,7 @@
     "venue": "SC 2023 Workshops",
     "awards": null,
     "tldr": "We propose tournament-based pretraining, seeding federated learning with the best of independently pretrained candidate models to accelerate convergence.",
-    "paper": null,
+    "paper": "publications/baughman2023tournament.pdf",
     "bibtex": "baughman2023tournament",
     "category": "ml",
     "code": null,

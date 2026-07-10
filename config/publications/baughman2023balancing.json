@@ -9,7 +9,7 @@
     "venue": "PerCom Workshops 2023",
     "awards": null,
     "tldr": "We characterize the accuracy, cost, and time trade-offs inherent to federated learning across heterogeneous devices and show how informed configuration improves outcomes.",
-    "paper": null,
+    "paper": "publications/baughman2023balancing.pdf",
     "bibtex": "baughman2023balancing",
     "category": "ml",
     "code": null,
