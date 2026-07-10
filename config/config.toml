@@ -17,10 +17,10 @@ analytics = ""
 source = "https://github.com/mattebaughman/mattebaughman.github.io/"
 text = """
 Hi there!
-I recently started a postdoc at Princeton working within the DOE's Princeton Plasma Physics Laboratory as an Associate Computational Scientist. At PPPL, I work in the AI4Science group with Shantenu Jha. Prior to Princeton, I completed my Ph.D. in Computer Science with <a href="https://labs.globus.org" target="_blank">Globus Labs</a> at the <a href="https://cs.uchicago.edu/" target="_blank">University of Chicago</a> in August 2025.
+I recently started a postdoc at <a href="https://www.princeton.edu/" target="_blank">Princeton</a> working within the DOE's <a href="https://www.pppl.gov/" target="_blank">Princeton Plasma Physics Laboratory</a> as an Associate Computational Scientist. At PPPL, I work in the AI4Science group with <a href="https://www.pppl.gov/people/shantenu-jha" target="_blank">Shantenu Jha</a>. Prior to Princeton, I completed my Ph.D. in Computer Science with <a href="https://labs.globus.org" target="_blank">Globus Labs</a> at the <a href="https://cs.uchicago.edu/" target="_blank">University of Chicago</a> in August 2025.
 I was advised by <a href="https://cs.uchicago.edu/people/ian-foster/" target="_blank">Ian Foster</a> and <a href="https://kylechard.com/" target="_blank">Kyle Chard</a>.
 My research spans high-performance computing, distributed systems, and cost-aware computing.
-I completed my Bachelor's in Computer Science and Philosophy at <a href="https://minerva.edu/" target="_blank">Minerva University</a> and have experience at Argonne National Laboratory, Opinary, and Google.
+I completed my Bachelor's in Computer Science and Philosophy at <a href="https://minerva.edu/" target="_blank">Minerva University</a> and have experience at <a href="https://www.anl.gov/" target="_blank">Argonne National Laboratory</a>, <a href="https://opinary.com/" target="_blank">Opinary</a>, and Google.
 """
 
 [research]
