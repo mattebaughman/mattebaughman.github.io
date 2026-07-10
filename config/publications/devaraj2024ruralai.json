@@ -1,0 +1,31 @@
+{
+    "title": "RuralAI in Tomato Farming: Integrated Sensor System, Distributed Computing, and Hierarchical Federated Learning for Crop Health Monitoring",
+    "authors": [
+        "Harish Devaraj",
+        "Shaleeza Sohail",
+        "Melanie Ooi",
+        "Boyang Li",
+        "Nathaniel Hudson",
+        "Matt Baughman",
+        "Kyle Chard",
+        "Ryan Chard",
+        "Enrico Casella",
+        "Ian Foster",
+        "Omer Rana"
+    ],
+    "venue": "IEEE Sensors Letters",
+    "awards": null,
+    "tldr": "We deploy an integrated sensor system with distributed computing and hierarchical federated learning for tomato crop health monitoring, demonstrating end-to-end rural AI in the field.",
+    "paper": null,
+    "bibtex": "devaraj2024ruralai",
+    "category": "science",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/LSENS.2024.3384935",
+    "preprint": null,
+    "year": 2024,
+    "month": 5,
+    "selected": false
+}

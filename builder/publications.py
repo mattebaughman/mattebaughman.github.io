@@ -54,6 +54,7 @@ def parse_publication_json(pub_file: str) -> Publication:
         "title",
         "authors",
         "venue",
+        "tldr",
         "bibtex",
         "year",
         "month",
@@ -64,6 +65,12 @@ def parse_publication_json(pub_file: str) -> Publication:
         raise ValueError(
             f"Publication file {pub_file} is missing required "
             f"field(s): {', '.join(missing)}.",
+        )
+
+    if not isinstance(attrs["month"], int) or not 1 <= attrs["month"] <= 12:
+        raise ValueError(
+            f"Publication file {pub_file} has invalid month "
+            f"{attrs['month']!r}; expected an integer from 1 to 12.",
         )
 
     if isinstance(attrs["authors"], list):
@@ -125,7 +132,7 @@ def load_publications(
                 f"Publication file {pub_file} references BibTeX entry "
                 f"'{pub.bibtex_id}' which does not exist in {bib_file}.",
             )
-        if categories is not None and pub.category not in categories:
+        if categories and pub.category not in categories:
             raise ValueError(
                 f"Publication file {pub_file} has category "
                 f"'{pub.category}' which is not one of the configured "

@@ -1,0 +1,24 @@
+{
+    "title": "Balancing Federated Learning Trade-Offs for Heterogeneous Environments",
+    "authors": [
+        "Matt Baughman",
+        "Nathaniel Hudson",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "PerCom Workshops 2023",
+    "awards": null,
+    "tldr": "We characterize the accuracy, cost, and time trade-offs inherent to federated learning across heterogeneous devices and show how informed configuration improves outcomes.",
+    "paper": null,
+    "bibtex": "baughman2023balancing",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/PERCOMWORKSHOPS56833.2023.10150228",
+    "preprint": null,
+    "year": 2023,
+    "month": 3,
+    "selected": true
+}

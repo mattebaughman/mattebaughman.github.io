@@ -1,0 +1,32 @@
+{
+    "title": "An Empirical Investigation of Container Building Strategies and Warm Times to Reduce Cold Starts in Scientific Computing Serverless Functions",
+    "authors": [
+        "Andr\u00e9 Bauer",
+        "Maxime Gonthier",
+        "Haochen Pan",
+        "Ryan Chard",
+        "Daniel Grzenda",
+        "Martin Straesser",
+        "J. Gregory Pauloski",
+        "Alok Kamatar",
+        "Matt Baughman",
+        "Nathaniel Hudson",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "eScience 2024",
+    "awards": null,
+    "tldr": "We empirically evaluate container building strategies and warm times to reduce cold starts for scientific serverless functions, offering practical guidance for FaaS deployments.",
+    "paper": null,
+    "bibtex": "bauer2024containers",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/E-SCIENCE62913.2024.10678668",
+    "preprint": null,
+    "year": 2024,
+    "month": 9,
+    "selected": false
+}

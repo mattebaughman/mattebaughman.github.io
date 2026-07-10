@@ -1,0 +1,32 @@
+{
+    "title": "Rural AI: Serverless-Powered Federated Learning for Remote Applications",
+    "authors": [
+        "Panos Patros",
+        "Melanie Ooi",
+        "Victoria Huang",
+        "Michael Mayo",
+        "Chris Anderson",
+        "Stephen Burroughs",
+        "Matt Baughman",
+        "Osama Almurshed",
+        "Omer F. Rana",
+        "Ryan Chard",
+        "Kyle Chard",
+        "Ian T. Foster"
+    ],
+    "venue": "IEEE Internet Computing",
+    "awards": null,
+    "tldr": "We make the case for serverless-powered federated learning to bring AI to remote and rural applications, outlining an architecture and open challenges for intermittently connected environments.",
+    "paper": null,
+    "bibtex": "patros2023ruralai",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/MIC.2022.3202764",
+    "preprint": null,
+    "year": 2023,
+    "month": 3,
+    "selected": true
+}

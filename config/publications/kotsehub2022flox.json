@@ -1,0 +1,28 @@
+{
+    "title": "FLoX: Federated Learning with FaaS at the Edge",
+    "authors": [
+        "Nikita Kotsehub",
+        "Matt Baughman",
+        "Ryan Chard",
+        "Nathaniel Hudson",
+        "Panos Patros",
+        "Omer F. Rana",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "eScience 2022",
+    "awards": null,
+    "tldr": "FLoX runs federated learning on serverless (FaaS) infrastructure at the edge, decoupling model training and inference from deployment so FL can run on heterogeneous real-world devices.",
+    "paper": null,
+    "bibtex": "kotsehub2022flox",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/ESCIENCE55777.2022.00016",
+    "preprint": null,
+    "year": 2022,
+    "month": 10,
+    "selected": true
+}

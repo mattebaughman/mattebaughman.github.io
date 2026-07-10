@@ -1,0 +1,26 @@
+{
+    "title": "Assessing the Current State of AWS Spot Market Forecastability",
+    "authors": [
+        "Simon Caton",
+        "Matt Baughman",
+        "Christian Haas",
+        "Ryan Chard",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "SuperCompCloud 2022",
+    "awards": null,
+    "tldr": "We assess whether the post-2017 AWS spot market remains forecastable, evaluating prediction approaches on modern spot price data.",
+    "paper": null,
+    "bibtex": "caton2022spot",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/SUPERCOMPCLOUD56703.2022.00007",
+    "preprint": null,
+    "year": 2022,
+    "month": 11,
+    "selected": false
+}

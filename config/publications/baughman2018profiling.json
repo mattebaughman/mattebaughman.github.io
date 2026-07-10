@@ -1,0 +1,26 @@
+{
+    "title": "Profiling and Predicting Application Performance on the Cloud",
+    "authors": [
+        "Matt Baughman",
+        "Ryan Chard",
+        "Logan T. Ward",
+        "Jason Pitt",
+        "Kyle Chard",
+        "Ian T. Foster"
+    ],
+    "venue": "UCC 2018",
+    "awards": null,
+    "tldr": "We profile applications and predict their performance across cloud resource types, supporting automated, cost-effective resource selection.",
+    "paper": null,
+    "bibtex": "baughman2018profiling",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/UCC.2018.00011",
+    "preprint": null,
+    "year": 2018,
+    "month": 12,
+    "selected": false
+}

@@ -1,0 +1,28 @@
+{
+    "title": "Accelerating Communications in Federated Applications with Transparent Object Proxies",
+    "authors": [
+        "J. Gregory Pauloski",
+        "Val\u00e9rie Hayot-Sasson",
+        "Logan T. Ward",
+        "Nathaniel Hudson",
+        "Charlie Sabino",
+        "Matt Baughman",
+        "Kyle Chard",
+        "Ian T. Foster"
+    ],
+    "venue": "SC 2023",
+    "awards": null,
+    "tldr": "ProxyStore introduces transparent object proxies that decouple bulk data movement from control flow in federated applications, accelerating communications across distributed executors.",
+    "paper": null,
+    "bibtex": "pauloski2023proxystore",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1145/3581784.3607047",
+    "preprint": "https://arxiv.org/abs/2305.09593",
+    "year": 2023,
+    "month": 11,
+    "selected": true
+}

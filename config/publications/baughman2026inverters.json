@@ -1,0 +1,24 @@
+{
+    "title": "Implications of Grid-Forming Inverter Parameters on Disturbance Localization and Controllability",
+    "authors": [
+        "Matt Baughman",
+        "Marena Trujillo",
+        "Bri-Mathias Hodge",
+        "Emily Jensen"
+    ],
+    "venue": "IEEE Control Systems Letters",
+    "awards": null,
+    "tldr": "We study how grid-forming inverter parameter choices shape disturbance localization and controllability in power systems, providing guidance for tuning inverter-dominated grids.",
+    "paper": null,
+    "bibtex": "baughman2026inverters",
+    "category": "science",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/LCSYS.2026.3688759",
+    "preprint": "https://arxiv.org/abs/2601.11453",
+    "year": 2026,
+    "month": 4,
+    "selected": false
+}

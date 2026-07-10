@@ -1,0 +1,26 @@
+{
+    "title": "Tournament-Based Pretraining to Accelerate Federated Learning",
+    "authors": [
+        "Matt Baughman",
+        "Nathaniel Hudson",
+        "Ryan Chard",
+        "Andr\u00e9 Bauer",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "SC 2023 Workshops",
+    "awards": null,
+    "tldr": "We propose tournament-based pretraining, seeding federated learning with the best of independently pretrained candidate models to accelerate convergence.",
+    "paper": null,
+    "bibtex": "baughman2023tournament",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1145/3624062.3626089",
+    "preprint": null,
+    "year": 2023,
+    "month": 11,
+    "selected": false
+}

@@ -1,0 +1,26 @@
+{
+    "title": "QoS-aware edge AI placement and scheduling with multiple implementations in FaaS-based edge computing",
+    "authors": [
+        "Nathaniel Hudson",
+        "Hana Khamfroush",
+        "Matt Baughman",
+        "Daniel E. Lucani",
+        "Kyle Chard",
+        "Ian T. Foster"
+    ],
+    "venue": "Future Generation Computer Systems",
+    "awards": null,
+    "tldr": "We present QoS-aware placement and scheduling of edge AI tasks that selects among multiple model implementations in FaaS-based edge computing, trading accuracy and latency to meet quality-of-service goals.",
+    "paper": null,
+    "bibtex": "hudson2024qos",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1016/J.FUTURE.2024.03.035",
+    "preprint": null,
+    "year": 2024,
+    "month": 8,
+    "selected": false
+}

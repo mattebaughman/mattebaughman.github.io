@@ -1,0 +1,31 @@
+{
+    "title": "Adaptive Edge-Cloud Environments for Rural AI",
+    "authors": [
+        "Osama Almurshed",
+        "Panos Patros",
+        "Victoria Huang",
+        "Michael Mayo",
+        "Melanie Ooi",
+        "Ryan Chard",
+        "Kyle Chard",
+        "Omer F. Rana",
+        "Harshaan Nagra",
+        "Matt Baughman",
+        "Ian T. Foster"
+    ],
+    "venue": "IEEE SCC 2022",
+    "awards": null,
+    "tldr": "We present adaptive edge-cloud environments for rural AI applications, orchestrating workloads across constrained, intermittently connected resources.",
+    "paper": null,
+    "bibtex": "almurshed2022adaptive",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/SCC55611.2022.00023",
+    "preprint": null,
+    "year": 2022,
+    "month": 7,
+    "selected": false
+}

@@ -1,0 +1,26 @@
+{
+    "title": "Measuring, Quantifying, and Predicting the Cost-Accuracy Tradeoff",
+    "authors": [
+        "Matt Baughman",
+        "Nifesh Chakubaji",
+        "Hong-Linh Truong",
+        "Krists Kreics",
+        "Kyle Chard",
+        "Ian T. Foster"
+    ],
+    "venue": "BPOD @ IEEE BigData 2019",
+    "awards": null,
+    "tldr": "We measure, quantify, and predict the cost-accuracy tradeoff in analytics workloads, enabling principled decisions about how much accuracy a dollar buys.",
+    "paper": null,
+    "bibtex": "baughman2019tradeoff",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/BIGDATA47090.2019.9006370",
+    "preprint": null,
+    "year": 2019,
+    "month": 12,
+    "selected": false
+}

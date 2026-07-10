@@ -1,0 +1,23 @@
+{
+    "title": "Exploring Tradeoffs in Federated Learning on Serverless Computing Architectures",
+    "authors": [
+        "Matt Baughman",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "eScience 2022",
+    "awards": null,
+    "tldr": "We systematically explore accuracy, cost, and time tradeoffs of federated learning on serverless architectures, quantifying configuration effects across deployment scenarios.",
+    "paper": null,
+    "bibtex": "baughman2022tradeoffs",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/ESCIENCE55777.2022.00074",
+    "preprint": null,
+    "year": 2022,
+    "month": 10,
+    "selected": false
+}

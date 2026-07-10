@@ -1,0 +1,32 @@
+{
+    "title": "Unveiling Temporal Performance Deviation: Leveraging Clustering in Microservices Performance Analysis",
+    "authors": [
+        "Andr\u00e9 Bauer",
+        "Timo Dittus",
+        "Martin Straesser",
+        "Alok Kamatar",
+        "Matt Baughman",
+        "Lukas Beierlieb",
+        "Marius Hadry",
+        "Daniel Grillmeyer",
+        "Yannik Lubas",
+        "Samuel Kounev",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "ICPE 2024 Companion",
+    "awards": null,
+    "tldr": "We use clustering over microservice performance data to unveil temporal performance deviations, helping operators detect when and where service behavior drifts.",
+    "paper": null,
+    "bibtex": "bauer2024deviation",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1145/3629527.3651843",
+    "preprint": null,
+    "year": 2024,
+    "month": 5,
+    "selected": false
+}

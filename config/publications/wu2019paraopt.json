@@ -1,0 +1,30 @@
+{
+    "title": "ParaOpt: Automated Application Parameterization and Optimization for the Cloud",
+    "authors": [
+        "Chaofeng Wu",
+        "Ian T. Foster",
+        "Ted Summer",
+        "Zhuozhao Li",
+        "Anna Woodard",
+        "Ryan Chard",
+        "Matt Baughman",
+        "Yadu N. Babuji",
+        "Kyle Chard",
+        "Jason Pitt"
+    ],
+    "venue": "CloudCom 2019",
+    "awards": null,
+    "tldr": "ParaOpt automatically parameterizes and optimizes applications for cloud deployment, searching configuration spaces to reduce cost and runtime.",
+    "paper": null,
+    "bibtex": "wu2019paraopt",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/CLOUDCOM.2019.00045",
+    "preprint": null,
+    "year": 2019,
+    "month": 12,
+    "selected": false
+}

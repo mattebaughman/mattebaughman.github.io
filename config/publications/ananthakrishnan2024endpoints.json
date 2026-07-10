@@ -1,0 +1,33 @@
+{
+    "title": "Enabling Remote Management of FaaS Endpoints with Globus Compute Multi-User Endpoints",
+    "authors": [
+        "Rachana Ananthakrishnan",
+        "Yadu N. Babuji",
+        "Matt Baughman",
+        "Josh Bryan",
+        "Kyle Chard",
+        "Ryan Chard",
+        "Ben Clifford",
+        "Ian T. Foster",
+        "Daniel S. Katz",
+        "Kevin Hunter Kesling",
+        "Chris Janidlo",
+        "Reid Mello",
+        "Lei Wang"
+    ],
+    "venue": "PEARC 2024",
+    "awards": null,
+    "tldr": "We introduce Globus Compute multi-user endpoints, enabling administrators to securely manage FaaS endpoints on shared HPC systems on behalf of many users.",
+    "paper": null,
+    "bibtex": "ananthakrishnan2024endpoints",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1145/3626203.3670612",
+    "preprint": null,
+    "year": 2024,
+    "month": 7,
+    "selected": false
+}

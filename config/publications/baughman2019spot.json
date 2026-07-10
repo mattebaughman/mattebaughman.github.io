@@ -1,0 +1,27 @@
+{
+    "title": "Deconstructing the 2017 Changes to AWS Spot Market Pricing",
+    "authors": [
+        "Matt Baughman",
+        "Simon Caton",
+        "Christian Haas",
+        "Ryan Chard",
+        "Rich Wolski",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "ScienceCloud 2019",
+    "awards": null,
+    "tldr": "We deconstruct the 2017 changes to AWS spot market pricing, showing how the smoothed pricing regime alters preemption behavior and forecasting strategies.",
+    "paper": null,
+    "bibtex": "baughman2019spot",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1145/3322795.3331465",
+    "preprint": null,
+    "year": 2019,
+    "month": 6,
+    "selected": false
+}

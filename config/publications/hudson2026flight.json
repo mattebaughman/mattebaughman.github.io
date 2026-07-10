@@ -1,0 +1,28 @@
+{
+    "title": "Flight: A FaaS-based framework for complex and Hierarchical Federated Learning",
+    "authors": [
+        "Nathaniel Hudson",
+        "Val\u00e9rie Hayot-Sasson",
+        "Yadu Nand Babuji",
+        "Matt Baughman",
+        "J. Gregory Pauloski",
+        "Ryan Chard",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "Future Generation Computer Systems",
+    "awards": null,
+    "tldr": "Flight is a federated learning framework built on function-as-a-service that supports complex hierarchical and asynchronous topologies, decoupling FL logic from infrastructure so the same workflow runs from edge devices to HPC.",
+    "paper": null,
+    "bibtex": "hudson2026flight",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1016/J.FUTURE.2025.107998",
+    "preprint": "https://arxiv.org/abs/2409.16495",
+    "year": 2026,
+    "month": 1,
+    "selected": true
+}

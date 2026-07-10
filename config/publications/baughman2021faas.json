@@ -1,0 +1,23 @@
+{
+    "title": "Enhancing Automated FaaS with Cost-aware Provisioning of Cloud Resources",
+    "authors": [
+        "Matt Baughman",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "eScience 2021",
+    "awards": null,
+    "tldr": "We enhance automated FaaS with cost-aware provisioning that selects and provisions cloud resources based on predicted workload cost, reducing execution cost for scientific workloads.",
+    "paper": null,
+    "bibtex": "baughman2021faas",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/ESCIENCE51609.2021.00053",
+    "preprint": null,
+    "year": 2021,
+    "month": 9,
+    "selected": false
+}

@@ -1,0 +1,33 @@
+{
+    "title": "CANDLE/Supervisor: a workflow framework for machine learning applied to cancer research",
+    "authors": [
+        "Justin M. Wozniak",
+        "Rajeev Jain",
+        "Prasanna Balaprakash",
+        "Jonathan Ozik",
+        "Nicholson T. Collier",
+        "John Bauer",
+        "Fangfang Xia",
+        "Thomas S. Brettin",
+        "Rick Stevens",
+        "Jamaludin Mohd-Yusof",
+        "Cristina Garcia-Cardona",
+        "Brian Van Essen",
+        "Matthew Baughman"
+    ],
+    "venue": "BMC Bioinformatics",
+    "awards": null,
+    "tldr": "CANDLE/Supervisor provides a workflow framework for large-scale hyperparameter exploration of deep learning models in cancer research on HPC systems.",
+    "paper": null,
+    "bibtex": "wozniak2018candle",
+    "category": "science",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1186/S12859-018-2508-4",
+    "preprint": null,
+    "year": 2018,
+    "month": 12,
+    "selected": false
+}

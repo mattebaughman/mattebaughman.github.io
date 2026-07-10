@@ -1,0 +1,32 @@
+{
+    "title": "Measurement and Applications: Exploring the Challenges and Opportunities of Hierarchical Federated Learning in Sensor Applications",
+    "authors": [
+        "Melanie Po-Leen Ooi",
+        "Shaleeza Sohail",
+        "Victoria Guiying Huang",
+        "Nathaniel Hudson",
+        "Matt Baughman",
+        "Omer F. Rana",
+        "Annika Hinze",
+        "Kyle Chard",
+        "Ryan Chard",
+        "Ian T. Foster",
+        "Theodoros Spyridopoulos",
+        "Harshaan Nagra"
+    ],
+    "venue": "IEEE Instrumentation & Measurement Magazine",
+    "awards": null,
+    "tldr": "We explore the challenges and opportunities of hierarchical federated learning for sensor applications from a measurement perspective.",
+    "paper": null,
+    "bibtex": "ooi2023measurement",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/MIM.2023.10328671",
+    "preprint": null,
+    "year": 2023,
+    "month": 12,
+    "selected": false
+}

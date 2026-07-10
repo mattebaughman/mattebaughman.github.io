@@ -1,0 +1,25 @@
+{
+    "title": "Predicting Amazon Spot Prices with LSTM Networks",
+    "authors": [
+        "Matt Baughman",
+        "Christian Haas",
+        "Rich Wolski",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "ScienceCloud 2018",
+    "awards": null,
+    "tldr": "We predict Amazon spot prices with LSTM networks, outperforming classical baselines and enabling cheaper cloud provisioning decisions.",
+    "paper": null,
+    "bibtex": "baughman2018lstm",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1145/3217880.3217881",
+    "preprint": null,
+    "year": 2018,
+    "month": 6,
+    "selected": false
+}

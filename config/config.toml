@@ -42,8 +42,8 @@ publications_dir = "./config/publications"
 # config/publications/*.json files to the heading shown on the site.
 [publications.categories]
 systems = "Distributed Systems"
-ml = "Scalable Deep Learning"
-science = "AI for Science"
+ml = "Federated Learning"
+science = "AI for Science & Applications"
 
 [presentations]
 presentations_dir = "./config/presentations"

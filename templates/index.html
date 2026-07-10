@@ -43,7 +43,7 @@
             "@type": "Person",
             "name": config.overview.name,
             "jobTitle": config.overview.titles[0],
-            "affiliation": config.overview.titles[1],
+            "affiliation": config.overview.titles[1] if config.overview.titles | length > 1 else None,
             "url": "https://mattebaughman.com/",
             "image": "https://mattebaughman.com/" + config.overview.headshot,
             "sameAs": social_links,
@@ -125,6 +125,7 @@
     {% include 'selected.html' %}
     {% endif %}
 
+    {% if theses %}
     <h2 id="theses" class="blue-grey-text text-darken-4">
         <i class="material-icons">book</i>
         THESES
@@ -133,6 +134,7 @@
         </a>
     </h2>
     {% include 'theses.html' %}
+    {% endif %}
 
     {% if config.projects.links %}
     <h2 id="projects" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
@@ -161,7 +163,7 @@
     </h2>
     <p class="blue-grey-text text-darken-3 h2-subheader">
         <em>
-        Ordered by most recent and grouped by topic. Bibtex file available for download
+        Ordered by most recent and grouped by topic. BibTeX file available for download
         <a href="{{ config.publications.bibtex }}" class="blue-grey-text text-darken-3">here</a>.
         </em>
     </p>

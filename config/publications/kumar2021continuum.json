@@ -1,0 +1,27 @@
+{
+    "title": "Coding the Computing Continuum: Fluid Function Execution in Heterogeneous Computing Environments",
+    "authors": [
+        "Rohan Kumar",
+        "Matt Baughman",
+        "Ryan Chard",
+        "Zhuozhao Li",
+        "Yadu N. Babuji",
+        "Ian T. Foster",
+        "Kyle Chard"
+    ],
+    "venue": "IPDPSW 2021",
+    "awards": null,
+    "tldr": "We demonstrate fluid function execution across heterogeneous computing environments, letting functions move seamlessly between cloud, edge, and HPC systems.",
+    "paper": null,
+    "bibtex": "kumar2021continuum",
+    "category": "systems",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/IPDPSW52791.2021.00018",
+    "preprint": null,
+    "year": 2021,
+    "month": 6,
+    "selected": false
+}

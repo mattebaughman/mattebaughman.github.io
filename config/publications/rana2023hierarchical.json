@@ -1,0 +1,27 @@
+{
+    "title": "Hierarchical and Decentralised Federated Learning",
+    "authors": [
+        "Omer F. Rana",
+        "Theodoros Spyridopoulos",
+        "Nathaniel Hudson",
+        "Matt Baughman",
+        "Kyle Chard",
+        "Ian T. Foster",
+        "Aftab Khan"
+    ],
+    "venue": "Cloud Continuum 2022",
+    "awards": null,
+    "tldr": "We survey hierarchical and decentralised federated learning approaches, organizing aggregation topologies across cloud, edge, and device tiers.",
+    "paper": null,
+    "bibtex": "rana2023hierarchical",
+    "category": "ml",
+    "code": null,
+    "website": null,
+    "poster": null,
+    "slides": null,
+    "publisher": "https://doi.org/10.1109/CloudContinuum57429.2022.00008",
+    "preprint": "https://arxiv.org/abs/2304.14982",
+    "year": 2022,
+    "month": 12,
+    "selected": false
+}
