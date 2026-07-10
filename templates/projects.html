@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-
 {% for project in config.projects.links %}
+{% if project.name %}
 <div class="bullet">
     <div>
         <i class="material-icons">chevron_right</i>
     </div>
-    <div id="bullet-entry">
+    <div class="bullet-entry">
         <b>{{ project.name }}:</b> {{ project.description }}
         [<a href="{{ project.link }}">Code</a>]
     </div>
 </div>
+{% endif %}
 {% endfor %}

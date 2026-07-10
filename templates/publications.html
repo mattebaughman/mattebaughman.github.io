@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-
 {% for key, category in pub_categories.items() %}
 <div style="margin-bottom: 10px">
 <div class="bullet">
 <div><i class="material-icons">chevron_right</i></div>
-<div id="bullet-entry"><b>{{ category | upper }}</b></div>
+<div class="bullet-entry"><b>{{ category | upper }}</b></div>
 </div>
 <div style="padding-left: 24px">
 <table cellspacing="0" cellpadding="0" style="table-layout: auto; width: 100%">
@@ -25,11 +23,11 @@
     <tr>
         <td></td>
         <td>
-        <a href="javascript:unhide('{{ pub.bibtex_id }}_tldr')" target="_self">TLDR</a> |
+        <a href="javascript:unhide('{{ pub.bibtex_id }}_tldr')" target="_self" role="button" aria-expanded="false" aria-controls="{{ pub.bibtex_id }}_tldr">TLDR</a> |
         {% if pub.paper %}
         <a href="{{ pub.paper }}">PDF</a> |
         {% endif %}
-        <a href="javascript:unhide('{{ pub.bibtex_id }}_authors')" target="_self">Authors</a> |
+        <a href="javascript:unhide('{{ pub.bibtex_id }}_authors')" target="_self" role="button" aria-expanded="false" aria-controls="{{ pub.bibtex_id }}_authors">Authors</a> |
         {% if pub.website %}
         <a href="{{ pub.website }}">Website</a> |
         {% endif %}
@@ -47,7 +45,7 @@
         {% elif pub.preprint %}
         <a href="{{ pub.preprint }}">Preprint</a> |
         {% endif %}
-        <a href="javascript:unhide('{{ pub.bibtex_id }}_bibtex')" target="_self">BibTex</a> |
+        <a href="javascript:unhide('{{ pub.bibtex_id }}_bibtex')" target="_self" role="button" aria-expanded="false" aria-controls="{{ pub.bibtex_id }}_bibtex">BibTeX</a> |
         <em>
             {{ pub.venue }}
              {% if pub.awards %}
@@ -60,8 +58,8 @@
         <td></td>
         <td>
             <div id="{{ pub.bibtex_id }}_tldr" class="hidden">
-                <div class="grey lighten-3" id="dropdown-box">
-                    <div id="dropdown-box-inner">
+                <div class="grey lighten-3 dropdown-box">
+                    <div class="dropdown-box-inner">
                     <b>TLDR:</b> {{ pub.tldr }}
                     </div>
                 </div>
@@ -72,8 +70,8 @@
         <td></td>
         <td>
             <div id="{{ pub.bibtex_id }}_authors" class="hidden">
-                <div class="grey lighten-3" id="dropdown-box">
-                    <div id="dropdown-box-inner">
+                <div class="grey lighten-3 dropdown-box">
+                    <div class="dropdown-box-inner">
                     <b>Authors:</b> {{ pub.authors }}
                     </div>
                 </div>
@@ -84,8 +82,8 @@
         <td></td>
         <td>
             <div id="{{ pub.bibtex_id }}_bibtex" class="hidden">
-                <div class="grey lighten-3" id="dropdown-box">
-                <pre id="dropdown-box-inner" style="white-space: pre-wrap; font-family: 'Roboto Mono'; font-size: 10pt;">{{ pub.bibtex }}</pre>
+                <div class="grey lighten-3 dropdown-box">
+                <pre class="dropdown-box-inner" style="white-space: pre-wrap; font-family: 'Roboto Mono'; font-size: 10pt;">{{ pub.bibtex }}</pre>
                 </div>
             </div>
         </td>

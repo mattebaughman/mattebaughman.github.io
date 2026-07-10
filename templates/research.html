@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-
 {% for research in config.research.sections %}
 <div class="bullet">
     <div>
         <i class="material-icons">chevron_right</i>
     </div>
-    <div id="bullet-entry">
+    <div class="bullet-entry">
         <b>{{ research.name }}:</b> {{ research.text | safe }}
     </div>
 </div>

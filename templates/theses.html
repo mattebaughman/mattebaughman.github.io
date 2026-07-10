@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 {% for thesis in theses %}
 <div class="bullet">
 <div>
@@ -14,8 +12,8 @@
         </a>
     </td></tr>
     <tr><td>
-        <a href="javascript:unhide('{{ thesis.tag }}_abstract')" target="_self">Abstract</a> |
-        <a href="javascript:unhide('{{ thesis.tag }}_committee')" target="_self">Committee</a> |
+        <a href="javascript:unhide('{{ thesis.tag }}_abstract')" target="_self" role="button" aria-expanded="false" aria-controls="{{ thesis.tag }}_abstract">Abstract</a> |
+        <a href="javascript:unhide('{{ thesis.tag }}_committee')" target="_self" role="button" aria-expanded="false" aria-controls="{{ thesis.tag }}_committee">Committee</a> |
         {% if thesis.pdf %}
         <a href="{{ thesis.pdf }}" target="_blank">PDF</a> |
         {% endif %}
@@ -29,8 +27,8 @@
     </td></tr>
     <tr><td>
         <div id="{{ thesis.tag }}_abstract" class="hidden">
-            <div class="grey lighten-3" id="dropdown-box">
-                <div id="dropdown-box-inner">
+            <div class="grey lighten-3 dropdown-box">
+                <div class="dropdown-box-inner">
                 <b>ABSTRACT:</b> {{ thesis.abstract | safe }}
                 </div>
             </div>
@@ -38,8 +36,8 @@
     </td></tr>
     <tr><td>
         <div id="{{ thesis.tag }}_committee" class="hidden">
-            <div class="grey lighten-3" id="dropdown-box">
-                <div id="dropdown-box-inner">
+            <div class="grey lighten-3 dropdown-box">
+                <div class="dropdown-box-inner">
                 <b>Committee:</b> {{ thesis.committee }}
                 </div>
             </div>

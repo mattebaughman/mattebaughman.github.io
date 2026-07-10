@@ -50,6 +50,22 @@ def parse_publication_json(pub_file: str) -> Publication:
     with open(pub_file) as f:
         attrs = json.load(f)
 
+    required = (
+        "title",
+        "authors",
+        "venue",
+        "bibtex",
+        "year",
+        "month",
+        "category",
+    )
+    missing = [key for key in required if attrs.get(key) is None]
+    if missing:
+        raise ValueError(
+            f"Publication file {pub_file} is missing required "
+            f"field(s): {', '.join(missing)}.",
+        )
+
     if isinstance(attrs["authors"], list):
         authors = ", ".join(attrs["authors"])
     elif isinstance(attrs["authors"], str):
@@ -91,14 +107,30 @@ def load_bibtex(bib_file: str) -> BibDatabase:
     return bibs
 
 
-def load_publications(pub_dir: str, bib_file: str) -> list[Publication]:
+def load_publications(
+    pub_dir: str,
+    bib_file: str,
+    categories: Sequence[str] | None = None,
+) -> list[Publication]:
     bibs = load_bibtex(bib_file).entries_dict
     bib_writer = get_bibtex_writer()
 
     pubs: list[Publication] = []
-    for pub_file in glob.glob("*.json", root_dir=pub_dir):
-        pub = parse_publication_json(os.path.join(pub_dir, pub_file))
+    for pub_name in glob.glob("*.json", root_dir=pub_dir):
+        pub_file = os.path.join(pub_dir, pub_name)
+        pub = parse_publication_json(pub_file)
 
+        if pub.bibtex_id not in bibs:
+            raise ValueError(
+                f"Publication file {pub_file} references BibTeX entry "
+                f"'{pub.bibtex_id}' which does not exist in {bib_file}.",
+            )
+        if categories is not None and pub.category not in categories:
+            raise ValueError(
+                f"Publication file {pub_file} has category "
+                f"'{pub.category}' which is not one of the configured "
+                f"categories: {', '.join(categories)}.",
+            )
         bib = bibs[pub.bibtex_id]
 
         temp_database = BibDatabase()
@@ -116,13 +148,13 @@ def main(argv: Sequence[str] | None = None) -> int:
     argv = argv if argv is not None else sys.argv[1:]
 
     parser = argparse.ArgumentParser(
-        description="BibTex Parser",
+        description="BibTeX Parser",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
         prog="python -m builder.publications",
     )
     parser.add_argument(
         "--input",
-        help="BibTex file to format",
+        help="BibTeX file to format",
     )
     parser.add_argument(
         "--output",

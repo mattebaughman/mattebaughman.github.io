@@ -36,12 +36,12 @@ class Config:
 
 @dataclasses.dataclass
 class BuildConfig:
-    """build config.
+    """Build config.
 
     Attributes:
-        build_dir: Output of build directory.
-        templates: Templates directory.
-        static: Static content directory.
+        build_dir: Output build directory.
+        templates_dir: Templates directory.
+        static_dir: Static content directory.
     """
 
     build_dir: str
@@ -58,7 +58,7 @@ class OverviewConfig:
         titles: List of titles/professions.
         headshot: Path to headshot image.
         contacts: Mapping of contact type to link.
-        analytics: Google analyics ID.
+        analytics: Google Analytics ID.
         source: Link to source code of website.
         text: Overview/intro paragraph (HTML supported).
     """
@@ -103,14 +103,17 @@ class PublicationsConfig:
     """Publications config.
 
     Attributes:
-        bibtex: Relative link to bibtex file (this will be relative to the
-            static files directory.
+        bibtex: Relative link to bibtex file (relative to the static
+            files directory).
         publications_dir: Directory containing JSON files of publication
             metadata.
+        categories: Mapping of category keys (used in the publication
+            JSON files) to the category headings shown on the site.
     """
 
     bibtex: str
     publications_dir: str
+    categories: dict[str, str] = dataclasses.field(default_factory=dict)
 
 
 @dataclasses.dataclass

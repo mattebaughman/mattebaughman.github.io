@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 {% for pub in publications %}
 <div class="bullet">
 <div>
@@ -22,7 +20,7 @@
         </em>
     </td></tr>
     <tr><td>
-        <a href="javascript:unhide('{{ pub.bibtex_id }}_selected_tldr')" target="_self">TLDR</a> |
+        <a href="javascript:unhide('{{ pub.bibtex_id }}_selected_tldr')" target="_self" role="button" aria-expanded="false" aria-controls="{{ pub.bibtex_id }}_selected_tldr">TLDR</a> |
         {% if pub.paper %}
         <a href="{{ pub.paper }}">PDF</a> |
         {% endif %}
@@ -43,12 +41,12 @@
         {% elif pub.preprint %}
         <a href="{{ pub.preprint }}">Preprint</a> |
         {% endif %}
-        <a href="javascript:unhide('{{ pub.bibtex_id }}_selected_bibtex')" target="_self">BibTex</a>
+        <a href="javascript:unhide('{{ pub.bibtex_id }}_selected_bibtex')" target="_self" role="button" aria-expanded="false" aria-controls="{{ pub.bibtex_id }}_selected_bibtex">BibTeX</a>
     </td></tr>
     <tr><td>
         <div id="{{ pub.bibtex_id }}_selected_tldr" class="hidden">
-            <div class="grey lighten-3" id="dropdown-box">
-                <div id="dropdown-box-inner">
+            <div class="grey lighten-3 dropdown-box">
+                <div class="dropdown-box-inner">
                 <b>TLDR:</b> {{ pub.tldr }}
                 </div>
             </div>
@@ -56,8 +54,8 @@
     </td></tr>
     <tr><td>
         <div id="{{ pub.bibtex_id }}_selected_bibtex" class="hidden">
-            <div class="grey lighten-3" id="dropdown-box">
-            <pre id="dropdown-box-inner" style="white-space: pre-wrap; font-family: 'Roboto Mono'; font-size: 10pt;">{{ pub.bibtex }}</pre>
+            <div class="grey lighten-3 dropdown-box">
+            <pre class="dropdown-box-inner" style="white-space: pre-wrap; font-family: 'Roboto Mono'; font-size: 10pt;">{{ pub.bibtex }}</pre>
             </div>
         </div>
     </td></tr>

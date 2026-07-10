@@ -69,15 +69,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     publications = load_publications(
         config.publications.publications_dir,
         os.path.join(config.build.static_dir, config.publications.bibtex),
+        categories=tuple(config.publications.categories),
     )
     presentations = load_presentations(config.presentations.presentations_dir)
     theses = load_theses(config.theses.theses_dir)
-
-    pub_categories = {
-        "systems": "Distributed Systems",
-        "ml": "Scalable Deep Learning",
-        "science": "AI for Science",
-    }
 
     build_dir = configure_build_dir(
         config.build.build_dir,
@@ -89,7 +84,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         # Keyword arguments that get passed to jinja templates
         selected_publications=[p for p in publications if p.selected],
         all_publications=publications,
-        pub_categories=pub_categories,
+        pub_categories=config.publications.categories,
         presentations=presentations,
         theses=theses,
         current_year=datetime.date.today().year,

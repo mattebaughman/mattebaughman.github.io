@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    {% if config.overview.analytics %}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.overview.analytics }}"></script>
     <script>
@@ -11,14 +12,43 @@
 
       gtag('config', '{{ config.overview.analytics }}');
     </script>
+    {% endif %}
 
     <!-- Open links in new tab by default -->
     <base target="_blank">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Personal website of {{ config.overview.name }}.">
+    <meta name="description" content="{{ config.overview.name }} — {{ config.overview.titles | join(', ') }}.">
     <meta name="author" content="{{ config.overview.name }}">
+
+    <!-- Canonical URL and social cards -->
+    <link rel="canonical" href="https://mattebaughman.com/">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="{{ config.overview.name }}">
+    <meta property="og:description" content="{{ config.overview.name }} — {{ config.overview.titles | join(', ') }}.">
+    <meta property="og:url" content="https://mattebaughman.com/">
+    <meta property="og:image" content="https://mattebaughman.com/{{ config.overview.headshot }}">
+    <meta name="twitter:card" content="summary">
+
+    {% set social_links = [] %}
+    {% for contact in config.overview.contacts %}
+        {% if not contact.link.startswith('mailto:') %}
+            {% set _ = social_links.append(contact.link) %}
+        {% endif %}
+    {% endfor %}
+    <script type="application/ld+json">
+        {{ {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": config.overview.name,
+            "jobTitle": config.overview.titles[0],
+            "affiliation": config.overview.titles[1],
+            "url": "https://mattebaughman.com/",
+            "image": "https://mattebaughman.com/" + config.overview.headshot,
+            "sameAs": social_links,
+        } | tojson }}
+    </script>
 
     <title>{{ config.overview.name }}</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -26,11 +56,6 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <!-- JS Stuff -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
@@ -44,7 +69,12 @@
         function unhide(divID) {
             var item = document.getElementById(divID);
             if (item) {
-                item.className=(item.className=='hidden')?'unhidden':'hidden';
+                var expanding = item.className == 'hidden';
+                item.className = expanding ? 'unhidden' : 'hidden';
+                var toggles = document.querySelectorAll('[aria-controls="' + divID + '"]');
+                for (var i = 0; i < toggles.length; i++) {
+                    toggles[i].setAttribute('aria-expanded', expanding ? 'true' : 'false');
+                }
             }
         }
     </script>
@@ -53,7 +83,7 @@
 <body class="grey lighten-4">
 <div class="mainblock">
     <div class="headshot">
-        <img src="{{ config.overview.headshot }}" alt="" width="100%" height="100%"/>
+        <img src="{{ config.overview.headshot }}" alt="Portrait of {{ config.overview.name }}" width="100%" height="100%"/>
     </div>
 
     <h1 class="blue-grey-text text-darken-4">{{ config.overview.name }}</h1>
@@ -80,30 +110,7 @@
     </h2>
     {% include 'research.html' %}
 
-    <h2 id="theses" class="blue-grey-text text-darken-4">
-        <i class="material-icons">book</i>
-        DISSERTATIONS
-        <a href="#dissertations" target="_self">
-            <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
-        </a>
-    </h2>
-    {% include 'theses.html' %}
-
-    <h2 id="projects" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
-        <i class="material-icons">engineering</i>
-        PROJECTS
-        <a href="#projects" target="_self">
-            <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
-        </a>
-    </h2>
-    <p class="blue-grey-text text-darken-3" id="h2-subheader">
-        <em>
-        Check out all of my projects on
-        <a href="{{ config.projects.github }}" class="blue-grey-text text-darken-3">GitHub</a>.
-        </em>
-    </p>
-    {% include 'projects.html' %}
-
+    {% if selected_publications %}
     <h2 id="selected-publications" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
         <i class="material-icons">star</i>
         SELECTED PUBLICATIONS
@@ -111,12 +118,40 @@
             <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
         </a>
     </h2>
-    <p class="blue-grey-text text-darken-3" id="h2-subheader">
+    <p class="blue-grey-text text-darken-3 h2-subheader">
         <em>Ordered by most recent.</em>
     </p>
     {% set publications = selected_publications %}
     {% include 'selected.html' %}
+    {% endif %}
 
+    <h2 id="theses" class="blue-grey-text text-darken-4">
+        <i class="material-icons">book</i>
+        THESES
+        <a href="#theses" target="_self">
+            <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
+        </a>
+    </h2>
+    {% include 'theses.html' %}
+
+    {% if config.projects.links %}
+    <h2 id="projects" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
+        <i class="material-icons">engineering</i>
+        PROJECTS
+        <a href="#projects" target="_self">
+            <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
+        </a>
+    </h2>
+    <p class="blue-grey-text text-darken-3 h2-subheader">
+        <em>
+        Check out all of my projects on
+        <a href="{{ config.projects.github }}" class="blue-grey-text text-darken-3">GitHub</a>.
+        </em>
+    </p>
+    {% include 'projects.html' %}
+    {% endif %}
+
+    {% if all_publications %}
     <h2 id="publications" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
         <i class="material-icons">article</i>
         ALL PUBLICATIONS
@@ -124,7 +159,7 @@
             <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
         </a>
     </h2>
-    <p class="blue-grey-text text-darken-3" id="h2-subheader">
+    <p class="blue-grey-text text-darken-3 h2-subheader">
         <em>
         Ordered by most recent and grouped by topic. Bibtex file available for download
         <a href="{{ config.publications.bibtex }}" class="blue-grey-text text-darken-3">here</a>.
@@ -132,7 +167,9 @@
     </p>
     {% set publications = all_publications %}
     {% include 'publications.html' %}
+    {% endif %}
 
+    {% if presentations %}
     <h2 id="presentations" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
         <i class="material-icons">co_present</i>
         PRESENTATIONS
@@ -140,17 +177,18 @@
             <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
         </a>
     </h2>
-    <p class="blue-grey-text text-darken-3" id="h2-subheader">
+    <p class="blue-grey-text text-darken-3 h2-subheader">
         <em>Ordered by most recent.</em>
     </p>
     {% include 'presentations.html' %}
+    {% endif %}
 </div>
-</body>
 
 <footer class="grey-text">
     <a href="{{ config.overview.source }}" class="grey-text">Source Code</a><br>
     Website design based on <a href="https://www.ericswallace.com/" class="grey-text">ericwallace.com</a>.<br>
     Copyright &copy; {{ current_year }} {{ config.overview.name }}.
 </footer>
+</body>
 
 </html>
