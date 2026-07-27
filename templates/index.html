@@ -101,6 +101,17 @@
 
     <p>{{ config.overview.text | safe }}</p>
 
+    {% if config.projects.links %}
+    <h2 id="projects" class="blue-grey-text text-darken-4">
+        <i class="material-icons">engineering</i>
+        PROJECTS
+        <a href="#projects" target="_self">
+            <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
+        </a>
+    </h2>
+    {% include 'projects.html' %}
+    {% endif %}
+
     <h2 id="research" class="blue-grey-text text-darken-4">
         <i class="material-icons">science</i>
         RESEARCH
@@ -136,23 +147,7 @@
     {% include 'theses.html' %}
     {% endif %}
 
-    {% if config.projects.links %}
-    <h2 id="projects" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
-        <i class="material-icons">engineering</i>
-        PROJECTS
-        <a href="#projects" target="_self">
-            <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
-        </a>
-    </h2>
-    <p class="blue-grey-text text-darken-3 h2-subheader">
-        <em>
-        Check out all of my projects on
-        <a href="{{ config.projects.github }}" class="blue-grey-text text-darken-3">GitHub</a>.
-        </em>
-    </p>
-    {% include 'projects.html' %}
-    {% endif %}
-
+    {# ALL PUBLICATIONS section temporarily hidden. To restore, uncomment.
     {% if all_publications %}
     <h2 id="publications" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
         <i class="material-icons">article</i>
@@ -170,6 +165,7 @@
     {% set publications = all_publications %}
     {% include 'publications.html' %}
     {% endif %}
+    #}
 
     {% if presentations %}
     <h2 id="presentations" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
@@ -183,6 +179,17 @@
         <em>Ordered by most recent.</em>
     </p>
     {% include 'presentations.html' %}
+    {% endif %}
+
+    {% if config.interests.sections %}
+    <h2 id="interests" class="blue-grey-text text-darken-4">
+        <i class="material-icons">explore</i>
+        SERVICE &amp; INTERESTS
+        <a href="#interests" target="_self">
+            <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
+        </a>
+    </h2>
+    {% include 'interests.html' %}
     {% endif %}
 </div>
 
