@@ -7,6 +7,7 @@
     <div class="bullet-entry">
         <b>{{ project.name }}:</b> {{ project.description }}
         {% if project.link %}[<a href="{{ project.link }}">Code</a>]{% endif %}
+        {% if project.video %}[<a href="{{ project.video }}">Video</a>]{% endif %}
     </div>
 </div>
 {% endif %}

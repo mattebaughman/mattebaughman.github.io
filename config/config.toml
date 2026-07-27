@@ -24,7 +24,7 @@ I completed my Bachelor's in Computer Science and Philosophy at <a href="https:/
 
 [research]
 sections = [
-    { name = "Distributed Agentic Systems", text = "We are building multi-agent systems that run scientific campaigns autonomously: coordinators that manage a campaign, proposal agents that choose the next experiment, and evaluators that score results and decide when to stop, with the physics codes left untouched underneath." },
+    { name = "Distributed Agentic Systems", text = "We are using AI agents to dynamically scale science, driving simulation, experimental, and discovery campaigns that decide for themselves what to run next and grow to meet the problem rather than the other way around." },
     { name = "AI for Science", text = "We are putting foundation models and learned surrogates for fusion energy to work inside real optimization loops, coupling them to the simulation codes they stand in for and to the facilities those codes run on." },
     { name = "Cost-aware Computing", text = "We are building scalable frameworks for highly distributed science workflows spanning dozens of computing sites and scaling to tens of thousands of compute nodes using novel cost-aware task placement algorithms and federated function-as-a-service infrastructure."}
 ]
@@ -32,10 +32,10 @@ sections = [
 [projects]
 github = "https://github.com/mattebaughman/"
 links = [
-    { name = "science_skill_demo", description = "A single prompt plus a few agent skills that get any coding agent to build a working multi-agent optimization campaign: competing search strategies measured against a hidden response surface, with a skeptical aggregator that re-measures each claimed result before trusting it. Verified by clean-room rebuilds from the prompt alone.", link = "https://github.com/mattebaughman/science_skill_demo" },
-    { name = "Genesis Skills", description = "A portable agent-skill catalog for the DOE Genesis Mission, plus a dependency-free search engine that loads skills progressively instead of flat-loading the catalog into context, cutting the context cost of the catalog by roughly 19x. Skills must run from any agent harness, so nothing harness-specific is admitted." },
+    { name = "Tritium Splash", description = "An agentic control loop for tritium-breeding blanket design, searching for configurations that sustain their own fuel supply. A campaign layer proposes and evaluates experiments while an inner orchestrator executes a declarative graph over neutronics, chemistry, materials, and quantum agents, each backed by a surrogate or the real simulation code depending on what a given facility can run.", link = "https://github.com/agents4science/tritium-splash-orchestrator/tree/new_arch", video = "https://www.youtube.com/watch?v=4I8GwLeplso" },
     { name = "IGNOS", description = "An evolutionary and Bayesian outer loop over plasma profile parameters for core-edge integration, running one candidate per GPU against diffusion-model imputation and simulation surrogates, with every campaign and candidate tracked as nested experiment runs." },
-    { name = "Tritium Splash", description = "An agentic control loop for tritium-breeding blanket design, searching for configurations that sustain their own fuel supply. A campaign layer proposes and evaluates experiments while an inner orchestrator executes a declarative graph over neutronics, chemistry, materials, and quantum agents, each backed by a surrogate or the real simulation code depending on what a given facility can run." },
+    { name = "Genesis Skills", description = "A portable agent-skill catalog for the DOE Genesis Mission, plus a dependency-free search engine that loads skills progressively instead of flat-loading the catalog into context, cutting the context cost of the catalog by roughly 19x. Skills must run from any agent harness, so nothing harness-specific is admitted." },
+    { name = "Genesis Agent Skills Onboarding Demo", description = "A single prompt plus a few agent skills that get any coding agent to build a working multi-agent optimization campaign: competing search strategies measured against a hidden response surface, with a skeptical aggregator that re-measures each claimed result before trusting it. Verified by clean-room rebuilds from the prompt alone.", link = "https://github.com/mattebaughman/science_skill_demo" },
 ]
 
 [publications]
@@ -54,3 +54,10 @@ presentations_dir = "./config/presentations"
 
 [theses]
 theses_dir = "./config/theses"
+
+[interests]
+sections = [
+    { name = "Minerva University", text = "I volunteer with my undergraduate alma mater as a guest instructor and on senior thesis committees, serve on the alumni council, and mentor students." },
+    { name = "DSI Summer Lab", text = "From 2021 to 2025 I coordinated the University of Chicago Data Science Institute's <a href=\"https://datascience.uchicago.edu/education/summer-lab/\" target=\"_blank\">Summer Lab</a> part-time, growing it from a dozen students recruited mostly by personal referral into one of the most selective data science research programs for high schoolers and undergraduates in the country." },
+    { name = "Aviation", text = "I had my pilot's license before my driver's license, have worked on building three different planes, and still make it to <a href=\"https://www.eaa.org/airventure\" target=\"_blank\">EAA</a> every year." },
+]
