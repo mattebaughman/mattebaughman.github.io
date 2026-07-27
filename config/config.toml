@@ -12,6 +12,7 @@ contacts = [
     { name = "github", link = "https://github.com/mattebaughman" },
     { name = "linkedin", link = "https://www.linkedin.com/in/mattebaughman/" },
     { name = "scholar", link = "https://scholar.google.com/citations?user=oehomH0AAAAJ" },
+    { name = "resume", link = "baughman_resume.pdf" },
 ]
 analytics = ""
 source = "https://github.com/mattebaughman/mattebaughman.github.io/"
