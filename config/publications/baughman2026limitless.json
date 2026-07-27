@@ -1,0 +1,14 @@
+{
+    "title": "Limitless, With an Asterisk: Agent Scaling and Skills for the Modern Era of Computational Science",
+    "authors": ["Matt Baughman"],
+    "venue": "In submission",
+    "tldr": "Most scientific agents today are hand-crafted demonstrations: orchestration is bespoke, capabilities are re-derived project by project, and one team's execution experience never compounds into another's. We argue that two paradigms convert demonstrations into reliable capability: hierarchy-agnostic agent interfaces, which let agents nest recursively so scale is no longer bounded by architecture, and skills, portable capability packages distilled from execution traces that let what agents learn travel across agents, projects, and institutions. We close on the asterisk on limitless scale: the verification, autonomy, cost, evaluation, and institutional-memory constraints that architecture alone does not solve.",
+    "bibtex": "baughman2026limitless",
+    "paper": null,
+    "preprint": null,
+    "publisher": null,
+    "year": 2026,
+    "month": 6,
+    "category": "systems",
+    "selected": true
+}
