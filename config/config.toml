@@ -31,7 +31,12 @@ sections = [
 
 [projects]
 github = "https://github.com/mattebaughman/"
-links = []
+links = [
+    { name = "science_skill_demo", description = "A single prompt plus a few agent skills that get any coding agent to build a working multi-agent optimization campaign: competing search strategies measured against a hidden response surface, with a skeptical aggregator that re-measures each claimed result before trusting it. Verified by clean-room rebuilds from the prompt alone.", link = "https://github.com/mattebaughman/science_skill_demo" },
+    { name = "Genesis Skills", description = "A portable agent-skill catalog for the DOE Genesis Mission, plus a dependency-free search engine that loads skills progressively instead of flat-loading the catalog into context, cutting the context cost of the catalog by roughly 19x. Skills must run from any agent harness, so nothing harness-specific is admitted." },
+    { name = "IGNOS", description = "An evolutionary and Bayesian outer loop over plasma profile parameters for core-edge integration, running one candidate per GPU against diffusion-model imputation and simulation surrogates, with every campaign and candidate tracked as nested experiment runs." },
+    { name = "Tritium Splash", description = "An agentic control loop for tritium-breeding blanket design, searching for configurations that sustain their own fuel supply. A campaign layer proposes and evaluates experiments while an inner orchestrator executes a declarative graph over neutronics, chemistry, materials, and quantum agents, each backed by a surrogate or the real simulation code depending on what a given facility can run." },
+]
 
 [publications]
 bibtex = "publications/baughman.bib"

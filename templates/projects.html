@@ -6,7 +6,7 @@
     </div>
     <div class="bullet-entry">
         <b>{{ project.name }}:</b> {{ project.description }}
-        [<a href="{{ project.link }}">Code</a>]
+        {% if project.link %}[<a href="{{ project.link }}">Code</a>]{% endif %}
     </div>
 </div>
 {% endif %}
