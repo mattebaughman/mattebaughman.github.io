@@ -15,6 +15,7 @@ class Config:
     publications: PublicationsConfig
     presentations: PresentationsConfig
     theses: ThesesConfig
+    interests: InterestsConfig
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> Config:
@@ -26,6 +27,7 @@ class Config:
             publications=PublicationsConfig(**data["publications"]),
             presentations=PresentationsConfig(**data["presentations"]),
             theses=ThesesConfig(**data["theses"]),
+            interests=InterestsConfig(**data.get("interests", {})),
         )
 
     @classmethod
@@ -82,6 +84,18 @@ class ResearchConfig:
     """
 
     sections: list[dict[str, str]]
+
+
+@dataclasses.dataclass
+class InterestsConfig:
+    """Interests config.
+
+    Attributes:
+        sections: List of mappings where each mapping contains the name
+            and text key corresponding to an interests section.
+    """
+
+    sections: list[dict[str, str]] = dataclasses.field(default_factory=list)
 
 
 @dataclasses.dataclass

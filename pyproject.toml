@@ -48,7 +48,7 @@ dist,
 config/theses/baughman2021masters.json,
 static/publications/baughman.bib,
 """
-ignore-words-list = "theses,THESES"
+ignore-words-list = "theses,THESES,mater"
 
 [tool.coverage.run]
 plugins = ["covdefaults"]

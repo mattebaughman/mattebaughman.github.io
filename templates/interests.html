@@ -1,0 +1,10 @@
+{% for interest in config.interests.sections %}
+<div class="bullet">
+    <div>
+        <i class="material-icons">chevron_right</i>
+    </div>
+    <div class="bullet-entry">
+        <b>{{ interest.name }}:</b> {{ interest.text | safe }}
+    </div>
+</div>
+{% endfor %}
