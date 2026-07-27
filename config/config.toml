@@ -17,16 +17,15 @@ analytics = ""
 source = "https://github.com/mattebaughman/mattebaughman.github.io/"
 text = """
 Hi there!
-I recently started a postdoc at <a href="https://www.princeton.edu/" target="_blank">Princeton</a> working within the DOE's <a href="https://www.pppl.gov/" target="_blank">Princeton Plasma Physics Laboratory</a> as an Associate Computational Scientist. At PPPL, I work in the AI4Science group with <a href="https://www.pppl.gov/people/shantenu-jha" target="_blank">Shantenu Jha</a>. Prior to Princeton, I completed my Ph.D. in Computer Science with <a href="https://labs.globus.org" target="_blank">Globus Labs</a> at the <a href="https://cs.uchicago.edu/" target="_blank">University of Chicago</a> in August 2025.
-I was advised by <a href="https://cs.uchicago.edu/people/ian-foster/" target="_blank">Ian Foster</a> and <a href="https://kylechard.com/" target="_blank">Kyle Chard</a>.
-My research spans high-performance computing, distributed systems, and cost-aware computing.
-I completed my Bachelor's in Computer Science and Philosophy at <a href="https://minerva.edu/" target="_blank">Minerva University</a> and have experience at <a href="https://www.anl.gov/" target="_blank">Argonne National Laboratory</a>, <a href="https://opinary.com/" target="_blank">Opinary</a>, and Google.
+I'm a Postdoctoral Computational Scientist at <a href="https://www.princeton.edu/" target="_blank">Princeton</a>, working within the DOE's <a href="https://www.pppl.gov/" target="_blank">Princeton Plasma Physics Laboratory</a> with <a href="https://www.pppl.gov/people/shantenu-jha" target="_blank">Shantenu Jha</a>. Most of my current work is part of the DOE's Genesis Mission, building multi-agent systems that run scientific campaigns end to end: proposing experiments, executing simulations on leadership-class machines, and evaluating what comes back. I also work on the skill and context mechanisms those systems need to stay tractable as they grow.
+Before Princeton, I completed my Ph.D. in Computer Science with <a href="https://labs.globus.org" target="_blank">Globus Labs</a> at the <a href="https://cs.uchicago.edu/" target="_blank">University of Chicago</a> in August 2025, advised by <a href="https://cs.uchicago.edu/people/ian-foster/" target="_blank">Ian Foster</a> and <a href="https://kylechard.com/" target="_blank">Kyle Chard</a>. My dissertation was on cost-aware placement of work across heterogeneous, federated systems; I now work that same problem one layer up, with agents as the thing being placed.
+I completed my Bachelor's in Computer Science and Philosophy at <a href="https://minerva.edu/" target="_blank">Minerva University</a>, and have worked at <a href="https://www.anl.gov/" target="_blank">Argonne National Laboratory</a>, <a href="https://opinary.com/" target="_blank">Opinary</a>, and Google.
 """
 
 [research]
 sections = [
-    { name = "Distributed Systems", text = "We are designing new programming paradigms which decouple system configuration and control from application design to enable multi-system workflows spanning HPC, the cloud, and the edge." },
-    { name = "Federated Learning", text = "We are exploring new techniques for improving distributed deep learning using self-adaptive system design and online feedback to enable complex, hierarchical federated learning across diverse ecosystems of hardware." },
+    { name = "Distributed Agentic Systems", text = "We are building multi-agent systems that run scientific campaigns autonomously: coordinators that manage a campaign, proposal agents that choose the next experiment, and evaluators that score results and decide when to stop, with the physics codes left untouched underneath." },
+    { name = "AI for Science", text = "We are putting foundation models and learned surrogates for fusion energy to work inside real optimization loops, coupling them to the simulation codes they stand in for and to the facilities those codes run on." },
     { name = "Cost-aware Computing", text = "We are building scalable frameworks for highly distributed science workflows spanning dozens of computing sites and scaling to tens of thousands of compute nodes using novel cost-aware task placement algorithms and federated function-as-a-service infrastructure."}
 ]
 
