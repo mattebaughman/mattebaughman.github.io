@@ -25,7 +25,7 @@
     <!-- Canonical URL and social cards -->
     <link rel="canonical" href="https://mattebaughman.com/">
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="{{ config.overview.name }}">
+    <meta property="og:title" content="{{ config.overview.name }} — {{ config.overview.titles | join(', ') }}">
     <meta property="og:description" content="{{ config.overview.name }} — {{ config.overview.titles | join(', ') }}.">
     <meta property="og:url" content="https://mattebaughman.com/">
     <meta property="og:image" content="https://mattebaughman.com/{{ config.overview.headshot }}">
@@ -50,7 +50,7 @@
         } | tojson }}
     </script>
 
-    <title>{{ config.overview.name }}</title>
+    <title>{{ config.overview.name }} — {{ config.overview.titles | join(', ') }}</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
     <!-- Compiled and minified CSS -->
