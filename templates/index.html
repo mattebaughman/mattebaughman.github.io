@@ -33,7 +33,7 @@
 
     {% set social_links = [] %}
     {% for contact in config.overview.contacts %}
-        {% if not contact.link.startswith('mailto:') %}
+        {% if contact.link.startswith('http') %}
             {% set _ = social_links.append(contact.link) %}
         {% endif %}
     {% endfor %}
@@ -101,6 +101,15 @@
 
     <p>{{ config.overview.text | safe }}</p>
 
+    <h2 id="research" class="blue-grey-text text-darken-4">
+        <i class="material-icons">science</i>
+        RESEARCH
+        <a href="#research" target="_self">
+            <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
+        </a>
+    </h2>
+    {% include 'research.html' %}
+
     {% if config.projects.links %}
     <h2 id="projects" class="blue-grey-text text-darken-4">
         <i class="material-icons">engineering</i>
@@ -111,15 +120,6 @@
     </h2>
     {% include 'projects.html' %}
     {% endif %}
-
-    <h2 id="research" class="blue-grey-text text-darken-4">
-        <i class="material-icons">science</i>
-        RESEARCH
-        <a href="#research" target="_self">
-            <i class="material-icons grey-text text-lighten-1 anchor-link">link</i>
-        </a>
-    </h2>
-    {% include 'research.html' %}
 
     {% if selected_publications %}
     <h2 id="selected-publications" class="blue-grey-text text-darken-4" style="margin-bottom: 4px;">
