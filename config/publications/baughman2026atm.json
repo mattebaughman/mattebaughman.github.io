@@ -1,0 +1,14 @@
+{
+    "title": "Adaptive Task Management: Automating Workload Distribution Across Computing Sites",
+    "authors": ["Matt Baughman"],
+    "venue": "In submission",
+    "tldr": "Compute is the currency of modern science, but there is no unified way to spend it across the many systems that make up the computing continuum. Adaptive Task Management (ATM) is a multi-system task manager that maps tasks onto resources spanning edge devices, cloud, and batch-scheduled HPC, combining a cost-aware placement algorithm with monitoring and management designed for both large batches of independent tasks and DAG-based workflows.",
+    "bibtex": "baughman2026atm",
+    "paper": null,
+    "preprint": null,
+    "publisher": null,
+    "year": 2026,
+    "month": 7,
+    "category": "systems",
+    "selected": true
+}
